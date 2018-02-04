@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "932683778051",
+    "firebase_url": "https://mtucichat.firebaseio.com",
+    "project_id": "mtucichat",
+    "storage_bucket": "mtucichat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932683778051:android:f3ff4ec21c2a84dd",
+        "android_client_info": {
+          "package_name": "com.shutovleonid.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932683778051-njotqpq46utgbjf2jj1325edhsgh4to8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shutovleonid.chat",
+            "certificate_hash": "fb01556f94c4ed6e92890652f2b35022d8ce5afa"
+          }
+        },
+        {
+          "client_id": "932683778051-1darqgsp8nq680kc3dokq421nmomlspc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9BrNXqINMcc_h-OzCryOObu5DilwsYh0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932683778051-1darqgsp8nq680kc3dokq421nmomlspc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
