@@ -20,9 +20,10 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import static com.leonidshutov.androidchat.Constants.FIRE_BASE_URL;
+
 
 public class Login extends AppCompatActivity {
-    public static final String FIREBASE_URL = "https://mtucichat.firebaseio.com/";
     public static final String USER_NOT_FOUND = "user not found";
     public static final String INCORRECT_PASSWORD = "incorrect password";
     TextView registerUser;
@@ -64,7 +65,7 @@ public class Login extends AppCompatActivity {
                     pd.setMessage("Loading...");
                     pd.show();
 
-                    StringRequest request = new StringRequest(Request.Method.GET, FIREBASE_URL, new Response.Listener<String>() {
+                    StringRequest request = new StringRequest(Request.Method.GET, FIRE_BASE_URL, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String s) {
                             if (s.equals("null")) {
