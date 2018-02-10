@@ -65,7 +65,7 @@ public class Login extends AppCompatActivity {
                     pd.setMessage("Loading...");
                     pd.show();
 
-                    StringRequest request = new StringRequest(Request.Method.GET, FIRE_BASE_URL, new Response.Listener<String>() {
+                    StringRequest request = new StringRequest(Request.Method.GET, FIRE_BASE_URL+"users.json", new Response.Listener<String>() {
                         @Override
                         public void onResponse(String s) {
                             if (s.equals("null")) {
@@ -79,7 +79,7 @@ public class Login extends AppCompatActivity {
                                     } else if (obj.getJSONObject(user).getString("password").equals(pass)) {
                                         UserDetails.username = user;
                                         UserDetails.password = pass;
-                                        startActivity(new Intent(Login.this, Users.class));
+                                        startActivity(new Intent(Login.this, User.class));
                                     } else {
                                         Toast.makeText(Login.this, INCORRECT_PASSWORD, Toast.LENGTH_LONG).show();
                                     }
